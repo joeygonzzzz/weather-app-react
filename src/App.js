@@ -3,6 +3,8 @@ import axios from 'axios';
 
 function App() {
 
+  
+
   const url = `https://api.openweathermap.org/data/2.5/weather?q=dallas&appid=9f2d9424cc5c534fbd0ee7a8d383b2c5`
 
   return (
@@ -21,13 +23,16 @@ function App() {
         </div>
         <div className="bottom">
           <div className="feels">
-            <p>65°F</p>
+            <p className='bold'>65°F</p>
+            <p>Feels Like</p>
           </div>
           <div className="humidity">
-            <p>20%</p>
+            <p className='bold'>20%</p>
+            <p>Humidity</p>
           </div>
           <div className="wind">
-            12 MPH
+            <p className='bold'>12 MPH</p>
+            <p>Wind Speed</p>
           </div>
         </div>
       </div>
